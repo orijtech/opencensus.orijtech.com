@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="openCensus,opencensus integrations,distributed tracing,distributed monitoring,microservices,mongoDB,redis,caddy server,memcached,microservices,monoliths,observability"></meta>
+        <title>OpenCensus integrations</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            html * {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .integration-logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 22vh;
+            }
+
+            .centered-text {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <img src="/images/opencensus-logo.png" class="integration-logo"></img>
+        </div>
+        <div class="centered-text">
+            <i><p>Modern planet scale observability: distributed tracing and monitoring for your microservices and monoliths alike</p></i>
+            <hr />
+            <b><p class="centered-text" style="font-size: 4vh">OpenCensus integrations</p></b>
+        </div>
+        <hr />
+        <div class="centered-text" id="redis-drivers">
+            <img src="/images/redis-logo.png" class="integration-logo"></img>
+            <br />
+            <p>Jedis, the Redis Java driver. Downloadable as a <a href="https://storage.googleapis.com/ossets/jedis/jedis-3.0.0-SNAPSHOT.jar">JAR</a> or you can check out the <a href="https://github.com/orijtech/jedis/pull/1" target="_blank">Github Pull Request</a>
+            <br />
+            <p>gomodule/redigo, the Redis Go driver. Check out the <a href="https://github.com/orijtech/redigo/pull/1" target="_blank">Github Pull Request</a>
+            <br />
+            <p>go-redis/redis, the Redis Go driver. Check out the <a href="https://github.com/orijtech/redis/pull/1" target="_blank">Github Pull Request</a>
+        </div>
+
+        <hr />
+        <div class="centered-text" id="memcached-drivers">
+            <img src="/images/memcached-logo.jpg" class="integration-logo" target="_blank"></img>
+            <p>Read the <a href="https://medium.com/@orijtech/memcached-clients-instrumented-with-opencensus-in-go-and-python-dacbd01b269c">Medium blogpost</a></p>
+            <p>or you can check out the code on Github:</p>
+            <p><a target="_blank" href="https://github.com/orijtech/gomemcache">Gomemcache, the Go driver</a></p>
+            <p><a target="_blank" href="https://github.com/orijtech/pymemcache/pull/1">Pymemcache, the Python driver</a></p>
+        </div>
+
+        <hr />
+        <div class="centered-text" id="mongodb-drivers">
+            <img src="/images/mongodb-logo.jpg" class="integration-logo"></img>
+            <p>Read the <a href="https://medium.com/@orijtech/mongodb-driver-instrumented-with-opencensus-in-go-e691370b8184">Medium blogpost</a></p>
+            <p>or you can check out the code on Github:</p>
+            <p><a target="_blank" href="https://github.com/orijtech/mongo-go-driver">Mongo-Go-Driver</a></p>
+            <p><a target="_blank" href="https://github.com/orijtech/mongo-java-driver/pull/1">Mongo-Java-Driver</a></p>
+            <br />
+            <p>and an end-to-end instrumented Go web app using the MongoDB Go driver: <a target="_blank" href="https://github.com/orijtech/media-search">Media search</a></p>
+        </div>
+        <hr />
+
+        <div class="centered-text" id="caddyserver">
+            <img src="/images/caddyserver-logo.png" class="integration-logo"></img>
+            <p>Check out the <a href="https://github.com/orijtech/caddy/blob/instrument-with-opencensus/Observability.md" target="_blank">Instrumented version and instructions on how to deploy it</a>
+        </div>
+        <hr />
+
+
+        <footer>
+            <p>This website is proudly powered by the instrumented version of Caddy, <a href="#caddyserver">linked above</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+opencensus.orijtech.com {
+# localhost:8999
+    root .
+    gzip
+}
